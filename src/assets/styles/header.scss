@@ -1,0 +1,399 @@
+.header-Container {
+  position: fixed;
+  width: 100%;
+  z-index: 10;
+  height: 72px;
+  top: 0;
+  .theme-change {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    .ant-form-item {
+      margin: 0 10px;
+    }
+  }
+  .ant-switch-checked {
+    background: #ffd66c;
+  }
+}
+
+.header-down {
+  display: none !important;
+}
+
+.ant-menu-item {
+  padding: 0 !important;
+}
+.ant-layout-header {
+  padding: 0 1em !important;
+  border: 0 !important;
+  margin: auto;
+  background: rgb(39, 38, 44) !important;
+}
+
+.set-bg {
+  background: #e1e4eb;
+}
+.more {
+  display: none !important;
+}
+.logo {
+  width: 137px;
+  height: 48px;
+}
+.theme {
+  width: 64px;
+  height: 29px;
+  border: 1px solid #e1e4eb;
+  box-sizing: border-box;
+  border-radius: 5px;
+  flex-direction: row;
+  display: none !important;
+}
+
+.left-header-nav {
+  justify-content: end;
+}
+
+.walletConnectBtn {
+  position: relative;
+}
+
+.walletInfoDialog {
+  position: absolute;
+  width: 344px;
+  border-radius: 15px;
+  background: linear-gradient(0deg, #ffffff, #ffffff);
+  border-width: 2px;
+  border-style: solid;
+  right: 15px;
+  padding: 33px 30px 0px 30px;
+  animation-name: wallet;
+  animation-duration: 0.3s;
+  .walletAddress {
+    display: flex;
+    .address {
+      font-family: "SFProDisplay";
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 21px;
+      color: #1b1b1b;
+      margin-right: 4.34px;
+    }
+    img {
+      width: 9.33px;
+      height: 11.67px;
+    }
+  }
+
+  .tokenInfo {
+    margin-top: 20px;
+    display: flex;
+    align-items: center;
+    img {
+      width: 40px;
+      height: 40px;
+      margin-right: 15px;
+    }
+    .balanceInfo {
+      .title {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #a9adbd;
+      }
+      .balance {
+        margin-top: 7px;
+        display: flex;
+        div:first-child {
+          font-family: "SFProDisplay";
+          font-style: normal;
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 19px;
+          color: #1b1b1b;
+          margin-right: 10px;
+        }
+        div:last-child {
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 17px;
+          color: #a9adbd;
+        }
+      }
+    }
+  }
+
+  .myProfile,
+  .editProfile,
+  .Disconnect {
+    font-family: "SFProDisplay";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 22px;
+    cursor: pointer;
+  }
+
+  .Disconnect {
+    display: flex;
+    align-items: center;
+    padding-bottom: 19px;
+    border-bottom: 2px solid #eff2f5;
+    .title {
+      margin-right: 21.86px;
+    }
+    img {
+      width: 18px;
+      height: 18px;
+    }
+  }
+
+  .terms {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9adbd;
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  .copyright {
+    margin: 20px -30px 0px -30px;
+    display: flex;
+    background: linear-gradient(0deg, #f0f5fb, #f0f5fb);
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    align-items: center;
+    justify-content: center;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 17px;
+    color: #a9adbd;
+    padding: 16px 43px 17px 30px;
+  }
+
+  .copyright.back-dark {
+    background: linear-gradient(0deg, #1d2333, #1d2333);
+  }
+}
+
+@keyframes wallet {
+  from {
+    right: -300px;
+    opacity: 0;
+  }
+  to {
+    right: 15px;
+    opacity: 1;
+  }
+}
+.walletInfoDialog.back-dark {
+  background: linear-gradient(0deg, #171b27, #171b27);
+}
+@media (max-width: 768px) {
+  .header-Container {
+    // padding:  0 3%;
+    .theme-change {
+      display: none;
+    }
+  }
+  .theme {
+    display: flex !important;
+    margin-right: 30px;
+  }
+  .logo {
+    width: 75px;
+    height: 26px;
+  }
+  .header-item {
+    display: none;
+  }
+  // .walletInfoDialog {
+  //   display: none;
+  // }
+  .more {
+    display: block !important;
+  }
+
+  .header-down {
+    position: absolute;
+    display: block !important;
+    padding: 50px 20px;
+    z-index: 1000;
+    width: 100%;
+    animation-name: show;
+    animation-duration: 0.3s;
+    left: 0;
+    top: 0;
+    .theme-change {
+      margin-top: 30px;
+      display: flex;
+      width: 100%;
+      justify-content: start;
+      .ant-switch-handle {
+        width: 21px;
+        height: 21px;
+        top: 1px;
+      }
+      .ant-switch {
+        min-width: 50px !important;
+        min-height: 25px !important;
+      }
+      .ant-switch-checked .ant-switch-handle {
+        left: calc(100% - 18px - 5px);
+      }
+    }
+    ::placeholder {
+      font-weight: 500;
+      font-size: 16px !important;
+      line-height: 150.02% !important;
+    }
+  }
+  @keyframes show {
+    from {
+      top: -300px;
+      opacity: 0;
+    }
+    to {
+      top: 0;
+      opacity: 1;
+    }
+  }
+
+  .header-btn {
+    width: 100% !important;
+  }
+
+  .copyright {
+    border-radius: unset !important;
+  }
+}
+.walletAddress {
+  display: flex;
+  .address {
+    font-family: "SFProDisplay";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 21px;
+    color: #1b1b1b;
+    margin-right: 4.34px;
+  }
+  img {
+    width: 9.33px;
+    height: 11.67px;
+  }
+}
+
+.tokenInfo {
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  img {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  .balanceInfo {
+    .title {
+      font-family: Inter;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 17px;
+      color: #a9adbd;
+    }
+    .balance {
+      margin-top: 7px;
+      display: flex;
+      div:first-child {
+        font-family: "SFProDisplay";
+        font-style: normal;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 19px;
+        color: #1b1b1b;
+        margin-right: 10px;
+      }
+      div:last-child {
+        font-family: Inter;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        color: #a9adbd;
+      }
+    }
+  }
+}
+
+.myProfile,
+.editProfile,
+.Disconnect {
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 21px;
+  margin-top: 22px;
+  letter-spacing: -0.7px;
+  cursor: pointer;
+}
+
+.Disconnect {
+  display: flex;
+  align-items: center;
+  padding-bottom: 19px;
+  border-bottom: 2px solid #eff2f5;
+  .title {
+    margin-right: 21.86px;
+  }
+  img {
+    width: 18px;
+    height: 18px;
+  }
+}
+
+.terms {
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9adbd;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.copyright {
+  margin: 20px -30px 0px -30px;
+  display: flex;
+  background: linear-gradient(0deg, #f0f5fb, #f0f5fb);
+  border-bottom-left-radius: 13px;
+  border-bottom-right-radius: 13px;
+  align-items: center;
+  justify-content: center;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #a9adbd;
+  padding: 16px 43px 17px 30px;
+}
+
+.copyright.back-dark {
+  background: linear-gradient(0deg, #1d2333, #1d2333);
+}

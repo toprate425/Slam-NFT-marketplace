@@ -1,0 +1,20 @@
+{
+    "data" :[
+        {"name" :"Trippy Art","des":"Collection “Trippy Stuff”","price":0.084,"url":"../assets/img/card1(5).png"},
+        {"name" :"Gangsta Monkey","des":"Collection “Ape Planet 2K21”","price":0.084,"url":"../assets/img/card1(6).png"},
+        {"name" :"*Ponk*","des":"Unnamed Collection","price":0.0185,"url":"../assets/img/card1(7).png"},
+        {"name" :"Sailor Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(4).png"},
+        {"name" :"Trippy Art","des":"Collection “Trippy Stuff”","price":0.0185,"url":"../assets/img/card1(9).png"},
+        {"name" :"Gangsta Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(11).png"},
+        {"name" :"*Ponk*","des":"Unnamed Collection","price":0.0185,"url":"../assets/img/card1(10).png"},
+        {"name" :"Sailor Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(8).png"},
+        {"name" :"Trippy Art","des":"Collection “Trippy Stuff”","price":0.0185,"url":"../assets/img/card1(13).png"},
+        {"name" :"Gangsta Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(14).png"},
+        {"name" :"*Ponk*","des":"Unnamed Collection","price":0.0185,"url":"../assets/img/card1(15).png"},
+        {"name" :"Sailor Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(12).png"},
+        {"name" :"Astral Ape","des":"Unnamed Collection","price":0.0185,"url":"../assets/img/card1(10).png"},
+        {"name" :"JJ Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(11).png"},
+        {"name" :"JJ Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(11).png"},
+        {"name" :"JJ Monkey","des":"Collection “Ape Planet 2K21”","price":0.0185,"url":"../assets/img/card1(11).png"}
+    ] 
+}

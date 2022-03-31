@@ -1,0 +1,127 @@
+.modal-container {
+  max-width: 670px;
+  width: 100%;
+  position: fixed;
+  transform: translateX(-50%);
+  top: 100px;
+  left: calc(100vw / 2);
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(71, 84, 99, 0.15);
+  border-radius: 25px;
+  padding: 50px;
+  animation-name: modal;
+  animation-duration: 0.5s;
+  z-index: 10000000;
+
+  .modal-close {
+    float: right;
+    cursor: pointer;
+    margin-top: -38px;
+    margin-right: -25px;
+  }
+  .modal-title {
+    display: flex;
+    justify-content: center;
+  }
+  .item-wallet {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 14px 36.5px;
+    max-width: 570px;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+
+    box-sizing: border-box;
+    border-radius: 15px;
+    align-items: center;
+    cursor: pointer;
+  }
+}
+@keyframes modal {
+  from {
+    opacity: 0;
+    top: -300px;
+  }
+  to {
+    opacity: 1;
+    top: 100px;
+  }
+}
+
+.welcomemodal-container {
+  padding: 50px 47px;
+  max-width: 670px;
+  position: fixed;
+  transform: translateX(-50%);
+  top: 100px;
+  left: calc(100vw / 2);
+  border-width: 1px;
+  border-style: solid;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 20px rgba(71, 84, 99, 0.15);
+  border-radius: 25px;
+  z-index: 10000000;
+  .modal_space {
+    max-width: 53px;
+    width: 100%;
+  }
+  .wel-btn {
+    padding: 24px 60px;
+    background: linear-gradient(0deg, #216af5, #216af5);
+    box-shadow: 0px 20px 19px -21px rgba(83, 159, 249, 0.4);
+    border-radius: 15px;
+    border: none;
+    width: 70%;
+    color: white;
+  }
+}
+
+@media (max-width: 1000px) {
+  .welcomemodal-container {
+    padding: 20px 50px;
+    min-width: 335px;
+    .modal_space {
+      max-width: 40px;
+    }
+    .modal-action {
+      flex-direction: column;
+      align-items: start !important;
+      .sm-w-100 {
+        width: 100%;
+      }
+      .wel-btn {
+        padding: 15px 60px;
+        border-radius: 8px;
+      }
+    }
+  }
+}
+
+@media (max-width: 526px) {
+  .modal-container {
+    max-width: 335px;
+    padding: 50px 20px;
+    .modal-close {
+      margin-right: -4px;
+    }
+    .item-wallet {
+      padding: 14px 20px;
+      max-width: 295px;
+    }
+  }
+}
+
+.light-border {
+  border-color: #afc6e1;
+}
+
+.dark-border {
+  border-color: #222837;
+}
+.grey-border {
+  border-color: #e1e4eb;
+}

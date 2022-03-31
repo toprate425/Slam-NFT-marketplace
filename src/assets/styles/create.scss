@@ -1,0 +1,464 @@
+@import "./color";
+
+.is-open {
+  width: 100vw !important;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 9;
+  filter: blur(10px);
+  background: rgba(90, 94, 99, 0.46);
+}
+.isLoading {
+  width: 100vw !important;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  background: rgba(90, 94, 99, 0.46);
+}
+.loadingIcon {
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 101;
+}
+
+.blue-apply {
+  filter: blur(4px);
+  width: 100vw;
+  height: 100%;
+}
+
+.connect-action {
+  height: 100%;
+  position: fixed;
+  top: 50px;
+  width: 100vw;
+  filter: blur(10px);
+  background: rgba(42, 54, 67, 0.46);
+  z-index: 9;
+}
+
+.blue-apply-container {
+  filter: blur(4px);
+  background: rgba(90, 94, 99, 0.46);
+}
+.ant-select-dropdown {
+  border-radius: 15px;
+  padding: 15px 0px;
+}
+.create-container {
+  margin: 80px 270px;
+  .art-upload-container {
+    max-width: 440px;
+    width: 100%;
+    height: 260px;
+    .preivew-img {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      max-height: 210px;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      border-radius: 25px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .ant-upload.ant-upload-drag {
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: dashed;
+    }
+  }
+  .close-btn {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1;
+  }
+  .change-btn {
+    position: absolute;
+    height: 20%;
+    bottom: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgb(112, 122, 131);
+  }
+  .change-btn:hover {
+    background: rgba(128, 128, 128, 0.9);
+  }
+  .preview-container {
+    max-width: 186px;
+    width: 100%;
+    height: 186px;
+    .ant-upload.ant-upload-drag {
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: dashed;
+    }
+    .sm-preview-container {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+      max-height: 145px;
+      width: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      border-radius: 25px;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+  }
+  .input-content {
+    border-radius: 15px;
+    padding: 0 30px;
+    width: 100%;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .des-textarea {
+    border-radius: 15px;
+    width: 100%;
+    resize: none;
+  }
+  .collection-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    .sm-down-collect {
+      position: absolute;
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      right: 30px;
+      top: 33px;
+      width: 100%;
+    }
+    .collection-list {
+      position: absolute;
+      top: 100px;
+      width: 100%;
+      z-index: 2;
+      .collection-field {
+        width: 100%;
+        border-width: 1px;
+        border-style: solid;
+        border-radius: 15px;
+        padding: 24px 30px;
+        cursor: pointer;
+      }
+      .collection-field:hover {
+        background: rgba(44, 42, 42, 0.192);
+        width: 100%;
+      }
+    }
+  }
+  .price-input-container {
+    position: relative;
+    .price-input {
+      border-radius: 15px;
+      padding: 0 30px;
+      width: 100%;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      z-index: 10;
+    }
+    .add-coin-icon {
+      position: absolute;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+      z-index: 1;
+      .set-chain {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        width: fit-content;
+        justify-content: flex-end;
+		.coin-img {
+            width: 32px;
+            height: 32px;
+          }
+        .arrow-down {
+          width: 9px;
+          height: 5px;
+        }
+      }
+    }
+	.coin-list {
+        position: absolute;
+		right: 0;
+        padding: 15px 7px 15px 15px;
+        border-radius: 15px;
+        border-style: solid;
+        border-width: 1px;
+        top: 81px;
+        .coin { 
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: center;
+          width: fit-content;
+		  cursor: pointer;
+          .coin-name {
+            border-right: 1px solid #303240;
+            padding-left: 15px;
+            padding-right: 15px;
+          }
+          .coin-img {
+            width: 32px;
+            height: 32px;
+          }
+        }
+      }
+  }
+  .ant-select-multiple .ant-select-selection-placeholder {
+    left: 30px;
+    font-family: "Inter";
+    font-size: 18px;
+  }
+  .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+    border-radius: 15px;
+    padding: 18px 22px;
+    background: transparent;
+  }
+  .ant-select-item-option-content {
+    padding: 10px 20px;
+    font-size: 15px;
+    font-family: "Inter";
+  }
+
+  .badge-container {
+    position: relative;
+  }
+
+  .badge-helper {
+    position: absolute;
+    left: 141px;
+    max-width: 263px;
+    top: 0px;
+    width: 100%;
+    padding: 20px 12px;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 25px rgba(210, 211, 213, 0.21);
+    border-radius: 25px;
+  }
+  .seleted-chain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 30px;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .down-icon {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .chain-list-container {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 30px 20px;
+    .chain-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+
+  .create-btn {
+    padding: 24px 66px;
+    background: #216af5;
+    box-shadow: 0px 20px 19px -21px rgba(83, 159, 249, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    border: none;
+  }
+}
+@media (max-width: 1366px) {
+  .create-container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .create-container {
+    margin-left: 10px;
+    margin-right: 10px;
+    .art-upload-container {
+      max-width: 354px;
+      height: 130px;
+      .ant-upload.ant-upload-drag {
+        border-radius: 13px;
+      }
+      .preivew-img {
+        max-height: 101px;
+        border-radius: 13px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+    .change-btn {
+      border-radius: 10px;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+    }
+    .preview-container {
+      max-width: 354px;
+      height: 93px;
+      .ant-upload.ant-upload-drag {
+        border-radius: 13px;
+      }
+      .sm-preview-container {
+        max-height: 71px;
+        top: 1px;
+        border-radius: 13px;
+        border-bottom-left-radius: 0px;
+        border-bottom-right-radius: 0px;
+      }
+    }
+
+    .input-content {
+      border-radius: 8px;
+      padding: 0 15px;
+      height: 35px;
+    }
+    .seleted-chain {
+      padding: 7px 15px;
+      border-radius: 8px;
+      .chain-img {
+        width: 20px;
+      }
+    }
+    .chain-list-container {
+      border-radius: 8px;
+      padding: 7px 15px;
+      .chain-item {
+        .chain-img {
+          width: 20px;
+        }
+      }
+    }
+
+    .price-input-container {
+      position: relative;
+      .price-input {
+        height: 35px;
+        border-radius: 8px;
+        padding: 0 15px;
+      }
+	  .coin-list {
+		top: 36px;
+		border-radius: 8px;
+		.coin {
+		  .coin-name {
+			border-right: 1px solid #303240;
+			padding-left: 9px;
+			padding-right: 15px;
+		  }
+		  .coin-img {
+			width: 16px;
+			height: 16px;
+		  }
+		}
+	  }
+
+      .add-coin-icon {
+		top: 5px;
+		right: 15px;
+		.set-chain {
+		  .coin-img {
+			width: 16px;
+			height: 16px;
+		  }
+		  .arrow-down {
+			width: 9px;
+			height: 5px;
+		  }
+		}
+	  }
+    }
+    .collection-container {
+      .sm-down-collect {
+        top: 1px;
+        right: 15px;
+      }
+      .collection-list{
+        top: 47px;
+        .collection-field {
+          border-radius: 8px;
+          padding: 6px 15px;
+        }
+      }
+    }
+    .ant-select:not(.ant-select-customize-input) .ant-select-selector {
+      border-radius: 8px;
+      padding: 2px 10px;
+      background: transparent;
+    }
+    .create-btn {
+      border-radius: 8px;
+      width: 100%;
+      padding-top: 12px;
+      padding-bottom: 12px;
+    }
+    .ant-switch-handle {
+      width: 11px;
+      height: 11px;
+      top: 1px;
+    }
+    .ant-switch-checked .ant-switch-handle {
+      left: calc(100% - 18px - -4px);
+    }
+    .ant-select-multiple .ant-select-selection-placeholder {
+      left: 15px;
+      font-size: 9px;
+    }
+    .badge-helper {
+      left: 102px;
+      max-width: 180px;
+      top: 0px;
+      width: 100%;
+      padding: 2px 6px;
+      border-radius: 8px;
+    }
+    .des-textarea {
+      border-radius: 8px;
+    }
+  }
+  .ant-switch {
+    min-width: 25px !important;
+    min-height: 14px !important;
+    border-radius: 18px !important;
+  }
+  .ant-select-dropdown {
+    border-radius: 8px;
+  }
+}

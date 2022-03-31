@@ -1,0 +1,184 @@
+.Sp12 {
+  font-family: "SFProDisplay";
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: -1.1px;
+  text-align: left;
+}
+.Sp16 {
+  font-family: "SFProDisplay";
+  font-size: 16px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Sp18 {
+  font-family: "SFProDisplay";
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Sp20 {
+  font-family: "SFProDisplay";
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.Sp22 {
+  font-family: "SFProDisplay";
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Sp24 {
+  font-family: "SFProDisplay";
+  font-size: 24px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: -1.7px;
+  text-align: left;
+}
+
+.Sp36 {
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 43px;
+  letter-spacing: -1.5px;
+}
+.Sp48 {
+  font-family: "SFProDisplay";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 48px !important;
+  line-height: 42px;
+  border-radius: 24px;
+  letter-spacing: -2.5px;
+}
+.Inter9 {
+  font-family: "Inter";
+  font-size: 9px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 11px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.Inter12 {
+  font-family: "Inter";
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+
+.Inter14 {
+  font-family: "Inter";
+  font-size: 12px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Inter14 {
+  font-family: "Inter";
+  font-size: 14px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.Inter18 {
+  font-family: "Inter";
+  font-size: 18px !important;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+
+  letter-spacing: -0.6px;
+  text-align: left;
+}
+.Inter22 {
+  margin-top: 10px;
+  font-family: "Inter";
+  font-size: 22px !important;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.SPFontB {
+  font-family: "SFProDisplayB";
+}
+.InterB {
+  font-family: "InterB" !important ;
+}
+
+@media (max-width: 768px) {
+  .sm-text-13 {
+    font-size: 13px !important;
+    line-height: 15.5px !important;
+  }
+  .sm-text-24 {
+    font-size: 24px !important;
+  }
+  .sm-text-14 {
+    font-size: 14px !important;
+    line-height: 21px !important;
+    letter-spacing: -0.5px;
+  }
+
+  .sm-Sp9 {
+    font-size: 8px !important;
+    font-weight: 600;
+    line-height: 9.5px !important;
+    letter-spacing: -1.1px;
+  }
+  .sm-Sp12 {
+    font-size: 12px !important;
+    font-weight: 600;
+    line-height: 11px !important;
+    letter-spacing: -1.1px;
+  }
+  .sm-Sp18 {
+    font-size: 18px !important;
+    font-weight: 700;
+    line-height: 22px !important;
+    letter-spacing: -0.5px;
+  }
+  .sm-Inter9 {
+    font-size: 9px !important;
+    line-height: 18px !important;
+    letter-spacing: 0em;
+  }
+  .sm-Inter12 {
+    font-size: 12px !important;
+    line-height: 14.5px !important;
+  }
+}
+
+.SB{
+  font-family: "SFProDisplayB";
+}

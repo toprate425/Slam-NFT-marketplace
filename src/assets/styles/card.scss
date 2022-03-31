@@ -1,0 +1,40 @@
+
+.item {
+    padding: 1%;
+    margin-bottom: 1rem;
+}
+
+.bg-card {
+    .card{
+        // background: rgba(177, 177, 177, 0.151);
+        background: #F0F5FB;
+        border-radius: 1rem;
+        border-color: transparent;
+        min-width: 265px;
+      }
+      .image-over{
+        height: 22rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}
+
+.sm-card {
+    .card{
+       // background: #F0F5FB;
+        border-radius: 1rem;
+        border-color: transparent;
+        max-width: 235px;
+      }
+    .image-over{
+        height: 11rem;
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    
+    }
+}

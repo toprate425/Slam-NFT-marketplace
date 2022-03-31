@@ -1,0 +1,266 @@
+@import "./color";
+
+.collection-area {
+  margin: 80px 270px;
+  .logo-upload {
+    max-width: 260px;
+    width: 100%;
+    height: 260px;
+    .ant-upload.ant-upload-drag {
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: dashed;
+    }
+  }
+  .feature-upload {
+    max-width: 400px;
+    width: 100%;
+    height: 300px;
+    .ant-upload.ant-upload-drag {
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: dashed;
+    }
+  }
+  .banner-upload {
+    max-width: 680px;
+    width: 100%;
+    height: 200px;
+    .ant-upload.ant-upload-drag {
+      border-radius: 25px;
+      border-width: 2px;
+      border-style: dashed;
+    }
+  }
+
+  .des-textarea {
+    border-radius: 15px;
+    width: 100%;
+    resize: none;
+  }
+
+  .name-input {
+    border-radius: 15px;
+    padding: 0 30px;
+    width: 100%;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+    z-index: 5;
+  }
+  .input-item {
+    position: relative;
+    .link-input {
+      border-radius: 15px;
+      padding-left: 64px;
+      width: 100%;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+    }
+    .icon-add {
+      position: absolute;
+      margin-left: 27px;
+      //   width: 100%;
+      top: 21px;
+    }
+  }
+  .cate-input {
+    border-radius: 15px;
+    padding: 0 30px;
+    max-width: 180px;
+    width: 100%;
+    height: 70px;
+    border-width: 1px;
+    border-style: solid;
+  }
+  .seleted-chain {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 15px 30px;
+    align-items: center;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    cursor: pointer;
+  }
+  .down-icon {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .chain-list-container {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 15px;
+    padding: 30px 20px;
+    .chain-item {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      cursor: pointer;
+    }
+  }
+  .coin-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    .coin-button {
+      display: flex;
+      flex-direction: row;
+      padding: 16px 60px 16px 20px;
+      border-width: 1px;
+      border-style: solid;
+      border-radius: 15px;
+      cursor: pointer;
+      .token-img {
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+  .add-token {
+    position: relative;
+    .down-icon-token {
+      position: absolute;
+      display: flex;
+      justify-content: flex-end;
+      top: 55px;
+      right: 33px;
+      width: 100%;
+    }
+    .token-input {
+      border-radius: 15px;
+      padding: 0 30px;
+      width: 100%;
+      height: 70px;
+      border-width: 1px;
+      border-style: solid;
+      z-index: 5;
+    }
+  }
+  .create-button {
+    padding: 24px 66px;
+    background: #216af5;
+    box-shadow: 0px 20px 19px -21px rgba(83, 159, 249, 0.4);
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    border: none;
+  }
+}
+@media (max-width: 1366px) {
+  .collection-area {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (max-width: 768px) {
+  .collection-area {
+    margin-left: 10px;
+    margin-right: 10px;
+    .logo-upload {
+      max-width: 156px;
+      height: 156px;
+    }
+    .feature-upload {
+      max-width: 263px;
+      width: 100%;
+      height: 93px;
+      .ant-upload.ant-upload-drag {
+        border-radius: 13px;
+      }
+    }
+    .banner-upload {
+      height: 93px;
+      .ant-upload.ant-upload-drag {
+        border-radius: 13px;
+      }
+    }
+    .des-textarea {
+      border-radius: 8px;
+    }
+    .name-input {
+      border-radius: 8px;
+      padding: 0 15px;
+      height: 35px;
+    }
+    .cate-input {
+      max-width: 97px;
+      width: 100%;
+      border-radius: 8px;
+      padding: 0 15px;
+      height: 35px;
+    }
+
+    .create-button {
+      border-radius: 8px;
+      width: 100%;
+      padding-top: 14px;
+      padding-bottom: 14px;
+    }
+    .input-item {
+      .link-input {
+        border-radius: 8px;
+        padding-left: 33px;
+        height: 35px;
+      }
+      .icon-add {
+        position: absolute;
+        margin-left: 11px;
+        top: 4px;
+        .icon-img {
+          width: 16px;
+        }
+      }
+    }
+    .seleted-chain {
+      padding: 7px 15px;
+      border-radius: 8px;
+      .chain-img {
+        width: 20px;
+      }
+    }
+    .chain-list-container {
+      border-radius: 8px;
+      padding: 7px 15px;
+      .chain-item {
+        .chain-img {
+          width: 20px;
+        }
+      }
+    }
+
+    .add-token {
+      .down-icon-token {
+        top: 40px;
+        right: 15px;
+        width: 100%;
+      }
+      .token-input {
+        border-radius: 8px;
+        padding: 0 15px;
+        width: 100%;
+        height: 35px;
+      }
+    }
+
+    .coin-list {
+      .coin-button {
+        padding: 4px 18px 4px 8px;
+        border-radius: 8px;
+        align-items: center;
+        .token-img {
+          width: 20px;
+          height: 20px;
+        }
+      }
+    }
+  }
+  .down {
+    width: 5px;
+  }
+}

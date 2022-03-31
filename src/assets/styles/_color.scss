@@ -1,0 +1,31 @@
+@import './color_variables';
+.font-grey-dark {
+    color: $grey-dark;
+}
+.font-grey-light{
+color: $grey-light;
+}
+.font-dark {
+    color: $dark;
+}
+.font-white {
+    color: $white;
+}
+.font-blue{
+    color:$blue;
+}
+.font-red {
+    color: $red;
+}
+.font-light{
+    color: $light;
+}
+
+.bg-grey-dark{
+    background: $grey-dark;
+}
+
+.boarderBlack {
+    border-color: $dark;
+}
+
