@@ -175,7 +175,7 @@ const Card = ({ url, name, price, collection, id, favourite, views }) => {
                     Price:
                   </div>
                   <div className="Inter18 font-blue InterB">
-                    {price} {"ETH"}
+                    {price} {"BNB"}
                   </div>
                 </div>
                 <hr

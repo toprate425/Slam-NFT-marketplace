@@ -1,12 +1,11 @@
-import { Layout, Form, Upload, Switch, Badge, Input, Select } from "antd";
+import { Layout, Upload, Switch, Badge, Select } from "antd";
 import "../assets/styles/create.scss";
 import { QuestionCircleOutlined } from "@ant-design/icons";
 import arrowDown from "../assets/img/arrow_down.svg";
 import React, { useState, useContext, useEffect, createRef } from "react";
 import { useHistory,useParams } from "react-router-dom";
 import { HeaderContext } from "../context";
-import Auth from "../auth/auth-helper";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import axios from "axios";
 import ReactPlayer from "react-player";
@@ -21,14 +20,12 @@ import DownWhite from "../assets/img/down-white.svg";
 
 const { Option } = Select;
 let formData = new FormData();
-const client = create("https://ipfs.infura.io:5001/api/v0");
 
 const UpdateNFT = () => {
 
 
   
   let { id } = useParams();
-  const [showList, setShowList] = useState(false);
   const [isHelper, setIsHelper] = useState(false);
   const [createData, setCreateData] = useState({});
   const [previewData, setPreivewData] = useState();

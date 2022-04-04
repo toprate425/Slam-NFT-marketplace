@@ -140,7 +140,7 @@ const DetailCard = ({ url, name, price, collection, id, favourite, views }) => {
     <>
       {theme == 1 ? (
         <div className={`col-12 col-sm-6 col-lg-4 col-xl-3 item  bg-card`}>
-          <div className={`card ${isDark ? "card-sec-bg" : "card-pre-bg"}`}>
+          <div style={{ cursor: 'pointer' }} onClick={() => ShowInfo(id)} className={`card ${isDark ? "card-sec-bg" : "card-pre-bg"}`}>
             <div className="image-over">
               <div className="art-img">
                 <img className="card-img-top" src={url} alt="" />
@@ -175,7 +175,7 @@ const DetailCard = ({ url, name, price, collection, id, favourite, views }) => {
                     Price:
                   </div>
                   <div className="Inter18 font-blue InterB">
-                    {price} {"ETH"}
+                    {price} {"BNB"}
                   </div>
                 </div>
                 <hr
@@ -183,14 +183,6 @@ const DetailCard = ({ url, name, price, collection, id, favourite, views }) => {
                   style={{ margin: "0px 0px 20px 0px" }}
                 />
                 <div className="card-bottom d-flex justify-content-between mt-15">
-                  <div onClick={() => ShowInfo(id)}>
-                    <Button
-                      label="Buy Now"
-                      textColor="white"
-                      bg="primary"
-                      borderColor="primary"
-                    />
-                  </div>
                   <div className="d-flex flex-row align-items-center font-grey-light Inter18">
                     <img src={eye} />
                     <div className="mx-1 Inter18 font-grey-light">{views}</div>

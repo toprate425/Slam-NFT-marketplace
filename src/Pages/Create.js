@@ -42,8 +42,9 @@ const Create = () => {
   const [previewForIpfs, setPreviewForIpfs] = useState();
   const [showChain, setShowChain] = useState(false);
   const [chains, setChains] = useState([
-    { name: "Etherium", icon: Etherium },
-    { name: "BSC-20", icon: BSC }
+    { name: "BSC-20", icon: BSC },
+    { name: "Etherium", icon: Etherium }
+    
   ]);
   const [hasArt, setHasArt] = useState(true);
   const [hasPre, setHasPre] = useState(true);
@@ -52,7 +53,7 @@ const Create = () => {
   const [hasCollection, setHasCollection] = useState(true);
   const [hasPrice, setHasPrice] = useState(true);
 
-  const [unit, setUnit] = useState("ETH");
+  const [unit, setUnit] = useState("BNB");
   const [showCoins, setShowCoins] = useState(false);
 
   const { setOpen, isDark, setLoading } = useContext(HeaderContext);
@@ -260,6 +261,7 @@ const Create = () => {
         formData.set("img", preUrl);
       }
       formData.set("chainType", chains[0].name);
+      console.log("fromdata",formData)
       axios
         .post(http + "api/article/new", formData, {
           headers: {
@@ -547,7 +549,7 @@ const Create = () => {
             External Link
           </div>
           <div className="Inter18 font-grey-light mt-sm-10 mt-17 sm-Inter9">
-            Slamcoin will include a link to this URL on this item’s detail page,
+            Marketplace will include a link to this URL on this item’s detail page,
             so that userse can click to learn more about it, You are welcome to
             link yto your own webpage with more details.
           </div>
@@ -664,7 +666,7 @@ const Create = () => {
             Price
           </div>
           <div className="Inter18 font-grey-light mt-sm-10 mt-17 sm-Inter9">
-            Slamcoin will include a link to this URL on this item’s detail page,
+            Marketplace will include a link to this URL on this item’s detail page,
             so that userse can click to learn more about it, You are welcome to
             link yto your own webpage with more details.
           </div>
@@ -727,19 +729,7 @@ const Create = () => {
                     Etherium
                   </div>
                 </div>
-                <div
-                  className="coin mt-15 mt-sm-10 Inter18 sm-Inter9"
-                  onClick={() => handleSetChain("$SLAM")}
-                >
-                  <img src={iconSLM} className="coin-img" />
-                  <div className={`coin-name ${isDark && "text-white"}`}>
-                    $SLAM
-                  </div>
-                  <div className={`ml-15 ${isDark && "text-white"}`}>
-                    {" "}
-                    Slamcoin
-                  </div>
-                </div>
+                
                 <div
                   className="coin mt-15 mt-sm-10 Inter18 sm-Inter9"
                   onClick={() => handleSetChain("BNB")}

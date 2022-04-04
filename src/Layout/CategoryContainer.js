@@ -18,6 +18,7 @@ const CategoryContainer = () => {
   const [openName, setOpenName] = useState([false, false]);
   const [openSort, setOpenSort] = useState({ name: null, id: null });
   const [cardList, setCardList] = useState();
+
   const {
     isDark,
     priceSortIndex,
@@ -63,7 +64,6 @@ const CategoryContainer = () => {
     axios
       .get(http + "api/article/list")
       .then((res) => {
-        console.log('res', res)
         setCardList(res.data);
         setLoading(false)
       })

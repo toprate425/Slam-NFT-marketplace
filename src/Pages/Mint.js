@@ -5,7 +5,7 @@ import user from "../assets/img/user.png";
 import MintButton from "../Components/MintButton";
 import "../assets/styles/mint.scss";
 import eye from "../assets/img/eye.svg";
-import { HeartFilled,HeartOutlined  } from "@ant-design/icons";
+import { HeartFilled } from "@ant-design/icons";
 import { useHistory } from "react-router-dom";
 import { HeaderContext } from "../context";
 import { useParams } from "react-router-dom";
@@ -23,7 +23,6 @@ const Mint = () => {
   const { isDark } = useContext(HeaderContext);
   const [art, setArt] = useState();
   const [hash, setHash] = useState();
-  const [USD, setUSD] = useState();
   const [isMinting,setIsMinting] = useState(false);
   const history = useHistory();
 
